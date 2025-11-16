@@ -1,5 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>    
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="theme-color" content="black" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title>lorem ipsum</title>
+  <style>
+    html, body {
+      margin: 0; padding: 0; height: 100%; width: 100%; background: black;
+    }
+    #player {
+      height: 100%; width: 100%;
+    }
+    .jw-controlbar .jw-icon {
+      display: none !important;
+    }
+    .jw-controlbar .jw-icon-volume {
+      display: inline-flex !important;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://telechileytelecampo.pages.dev/canales/jwplayer.js"></script> 
+  <script>
+    jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";
+
+    function setupPlayer() {
+      jwplayer("player").setup({
+        //file: "https://mdstrm.com/live-stream-playlist/53d2c1a32640614e62a0e000.m3u8?access_token=rma3gudiTeaHQRHYARojzuRClLPheAuzZ265GS3olCbRViVqhhVhAhmtdPI3GbkE6jmJwJCrpZS",
+        file: "https://cl-a3-p-e-av11.cdn.mdstrm.com/live-stream-gdai/linear/hls/pa/event/TdvXGBreTYyJZiwX63BRIA/stream/a293b281-a6ef-433f-b0c0-70fa3096cb82:ATL/variant/4391a7b407903ed9bd54764f8d2a7cfd/bandwidth/1075800.m3u8?aid=53bc2bcae41e2d9c662e1ba7 &access_token=ybBeXcV5O23jkgAS1ovTA0QvbFwKMkGsaoLZQQVxorFOl2WaorO1K6Yokf0RYIS5rKeqeW7cA0B&adInsertionGoogleStreamId=a293b281-a6ef-433f-b0c0-70fa3096cb82%3AATL&ote=1763412846240&ot=qZvk_VuICO7tHrsh-jL6XQ",
+        height: "100%",
+        width: "100%",
+        autostart: true,
+        mute: false,
+        controls: true
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", setupPlayer);
+  </script>
+
+  <div id="player"></div>
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <title>lorea</title>
@@ -23,6 +73,8 @@
   ></iframe>
 </body>
 </html>
+
+-->
 <!--
 <!DOCTYPE html>
 <html lang="es">
